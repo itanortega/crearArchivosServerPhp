@@ -4,6 +4,6 @@
     $fp = fopen($nombre,"w");
     fwrite($fp, $contenido);
     fclose($fp);
-    header('Location: ./index.php');
+    header('Location: ./archivos.php');
 
 ?>
