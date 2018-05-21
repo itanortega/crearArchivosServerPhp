@@ -8,7 +8,7 @@
 </head>
 <body>
 <form action="./guardar.php" method="post" id="usrform">
-  <br>Nombre: 
+  <br>Ruta: 
   <br><input type="text" name="nombre" required>
   <br>Contenido :
   <br><textarea name="contenido" rows="40" cols="80" required ></textarea >
@@ -23,13 +23,13 @@
 <br>
 <h1>Lista de archivos</h1>
 <?php
-  $directorio = './';
+  $directorio = './archivos/';
   $ficheros1  = scandir($directorio);
   
   foreach($ficheros1 as $archivo){
-    if($archivo!="." && $archivo!=".." && $archivo!=".DS_Store" && $archivo!=".git" && $archivo!="index.php" && $archivo!="guardar.php" && $archivo!="archivos.php" && $archivo!="imagenes.php" && $archivo!="uploader.php"  && $archivo!="api.php" && $archivo!="imgs"){
+    if($archivo!="." && $archivo!=".." && $archivo!=".DS_Store" && $archivo!="index.html"){
     echo "<br>";
-    echo '<a href="./'.$archivo.'" target="_blank">'.$archivo.'</a>';
+    echo '<a href="./api.php?get='.substr($archivo, 0, -5).'" target="_blank">'.$archivo.'</a>';
     }
   }
 ?>

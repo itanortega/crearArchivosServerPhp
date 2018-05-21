@@ -1,5 +1,5 @@
 <?php
-  $archivo = $_GET['get'] . ".json";
+  $archivo = "./archivos/".$_GET['get'] . ".json";
   $fp = fopen($archivo, "r");
 
   $linea = "";

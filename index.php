@@ -7,7 +7,8 @@
   <title>api</title>
 </head>
 <body>
-  <?php
-  ?>
+  <a href="archivos.php" target="_blank">Archivos</a>
+  <br><br><br>
+  <a href="imagenes.php" target="_blank">Imágenes</a>
 </body>
 </html>
