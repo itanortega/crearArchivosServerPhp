@@ -11,7 +11,7 @@
   <br>Nombre: 
   <br><input type="text" name="nombre" required>
   <br><input id="imagen" name="imagen" size="30" type="file" required/>
-  <br><br><input type="submit" value="Cambiar datos" />
+  <br><br><input type="submit" value="Subir" />
 </form>
 
 <br>
