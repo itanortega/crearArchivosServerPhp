@@ -26,7 +26,7 @@
   
   foreach($ficheros1 as $archivo){
     if($archivo!="." && $archivo!=".." && $archivo!=".DS_Store" && $archivo!="index.html"){
-    echo '<a href="./imgs/'.$archivo.'" target="_blank"><img src="./imgs/'.$archivo.'" width="100" alt=""></a>';
+    echo '<br><br><a href="./imgs/'.$archivo.'" target="_blank"><h1>'.$archivo.'</h1>   <img src="./imgs/'.$archivo.'" width="100" alt=""></a>';
     }
   }
 ?>
