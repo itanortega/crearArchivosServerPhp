@@ -27,7 +27,7 @@
   $ficheros1  = scandir($directorio);
   
   foreach($ficheros1 as $archivo){
-    if($archivo!="." && $archivo!=".." && $archivo!=".DS_Store" && $archivo!="index.html"){
+    if($archivo!="." && $archivo!=".." && $archivo!=".DS_Store" && $archivo!="index.html"  && $archivo!="default.json"){
     echo "<br>";
     echo '<a href="./api.php?get='.substr($archivo, 0, -5).'" target="_blank">'.$archivo.'</a>';
     }
